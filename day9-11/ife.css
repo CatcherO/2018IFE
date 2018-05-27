@@ -1,0 +1,83 @@
+
+
+.header {
+    overflow: hidden;
+    width: 16rem;
+    height: 9.9rem;
+    background-image: url(./assets/header/header-background_01.jpg);
+    background-size: contain;
+    text-align: center;
+}
+
+.header .header-text h1 {
+    margin-top: 2.09rem;
+    font-size: 0.62rem;
+    color: #fff;
+    line-height: 0.72rem;
+}
+
+.header .header-text p {
+    margin: 0.84rem auto 0 auto;
+    width: 7.53rem;
+    line-height: 0.32rem;
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, .7);
+}
+
+.form-border {
+    
+    margin:1.02rem auto 0 auto;
+    width: 9.7rem;
+    height: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.form-border .form-text {
+    word-spacing: 7px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.46rem;
+    width: 9.7rem;
+    height: 1.48rem;
+    
+}
+.form-border .form-text .form-h {
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.form-border .form-text .form-p {
+    margin-top: 0.19rem;
+    letter-spacing: 1px;
+    color:rgba(255, 255, 255, .3);
+    font-size: 10px;
+}
+
+.form-border .input-feild {
+    line-height: 0;
+    width: 9.7rem;
+    height: 1.02rem;
+    
+}
+
+.form-border .input-feild .inputbox {
+    padding: 0.2rem;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 2px;
+    width: 2.92rem;
+    height: 0.5rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.form-border .input-feild .btn {
+    font-size: 0.12rem;
+    font-weight: bold;
+    border-radius: 2px;
+    border: 1px;
+    height: 0.5rem;
+    width: 1.25rem;
+    background-color: #fff;
+}
