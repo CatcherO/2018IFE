@@ -1,0 +1,15 @@
+.feature {
+    width: 16rem;
+    height:7.1rem;
+}
+.Iphone_Icon {
+    border-radius: 0px;
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    left: 292px;
+    top: 1307px;
+    width: 30px;
+    height: 49px;
+    z-index: 225;
+  }
+  
