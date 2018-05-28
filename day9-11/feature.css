@@ -1,15 +1,85 @@
 .feature {
+    padding: 0.9rem 2.78rem 0 2.78rem;
     width: 16rem;
     height:7.1rem;
+    text-align: center;
 }
-.Iphone_Icon {
-    border-radius: 0px;
-    background-color: rgb(20, 20, 20);
-    position: absolute;
-    left: 292px;
-    top: 1307px;
-    width: 30px;
-    height: 49px;
-    z-index: 225;
-  }
-  
+.feature > p {
+    font-size: 0.14rem;
+    font-weight: 550;
+}
+.feature > h2 {
+    width: 6.28rem;
+    margin: 0.4rem auto 0.8rem auto;
+    line-height: 0.52rem;
+    font-weight: bold;
+    font-size: 0.34rem;
+}
+
+.feature ul {
+    width:10.45rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.feature ul li {
+    /* flex: 1; */
+    /* flex-basis: 4.44rem; */
+    display: flex;
+    width: 4.44rem;
+    text-align: left;
+    margin-bottom: 0.75rem;
+}
+.feature li:nth-child(1) i {
+    display: block;
+    width: 0.49rem;
+    height: 0.48rem;
+    background-image: url(./assets/features/Iphone.svg); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature li:nth-child(2) i {
+    width: 0.49rem;
+    height: 0.48rem;
+    display: block;
+    background-image: url(./assets/features/Check.svg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+.feature li:nth-child(3) i {
+    width: 0.5rem;
+    height: 0.48rem;
+    display: block;
+    background-image: url(./assets/features/Pencil.svg); 
+    background-repeat: no-repeat;
+    
+}
+.feature li:nth-child(4) i {
+    width: 0.5rem;
+    height: 0.48rem;
+    display: block;
+    background-image: url(./assets/features/Settings.svg); 
+    background-repeat: no-repeat;
+    
+}
+
+.feature li .text {
+    width: 3.68rem;
+    margin-left: 0.3rem;
+}
+
+.feature ul li .title {
+
+    font-size: 0.16rem;
+    font-weight: bold;
+}
+
+.feature ul .content {
+    margin-top: 0.25rem;
+    font-size: 0.16rem;
+    color: rgba(0, 0, 0, .7);
+    line-height: 0.26rem;
+}
