@@ -35,17 +35,19 @@
     display: block;
     width: 0.49rem;
     height: 0.48rem;
-    background-image: url(./assets/features/Iphone.svg); 
+    background-image: url(../assets/features/Iphone.svg); 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 .feature li:nth-child(2) i {
     width: 0.49rem;
     height: 0.48rem;
     display: block;
-    background-image: url(./assets/features/Check.svg); 
+    background-image: url(../assets/features/Check.svg); 
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     
     
 }
@@ -53,16 +55,18 @@
     width: 0.5rem;
     height: 0.48rem;
     display: block;
-    background-image: url(./assets/features/Pencil.svg); 
+    background-image: url(../assets/features/Pencil.svg); 
     background-repeat: no-repeat;
+    background-size: contain;
     
 }
 .feature li:nth-child(4) i {
     width: 0.5rem;
     height: 0.48rem;
     display: block;
-    background-image: url(./assets/features/Settings.svg); 
+    background-image: url(../assets/features/Settings.svg); 
     background-repeat: no-repeat;
+    background-size: contain;
     
 }
 

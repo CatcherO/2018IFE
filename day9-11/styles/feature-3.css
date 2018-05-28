@@ -1,0 +1,39 @@
+.feature-3 {
+    margin: 0 auto;
+    width: 9.8rem;
+    height: 10rem;
+    padding-top: 1.18rem;
+    
+    
+}
+
+.feature-3> .ctx {
+    display: flex;
+}
+.feature-3> .ctx > .text h3 {
+    line-height: 0.32rem;
+    font-size: 0.2rem;
+    font-weight: bold;
+}
+.feature-3> .ctx > .text p {
+    width: 3.12rem;
+    margin-top: 0.36rem;
+    line-height: 0.3rem;
+    font-size: 0.16rem;
+    opacity: .7;
+}
+.feature-3> .ctx:nth-child(1) > .text {
+    padding-top: 0.77rem;
+    padding-left: 1rem;
+}
+.feature-3> .ctx:nth-child(2) {
+    margin-top: 0.8rem;
+}
+.feature-3> .ctx:nth-child(2) > .text {
+    width: 3.88rem;
+    padding-top: 0.72rem;
+}
+.feature-3> .ctx img {
+    width: 5.7rem;
+    height: 3.5rem;
+}

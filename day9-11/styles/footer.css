@@ -1,0 +1,31 @@
+footer {
+    width: 16rem;
+    height: 4.1rem;
+    padding: 0.9rem 2.15rem;
+    background: #141414;
+    color: #fff;
+}
+footer .contain {
+    display: flex;
+}
+
+footer .contain dl {
+    height: 2rem;
+    width: 3rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+footer .contain dl dt {
+    font-weight: bold;
+    font-size: 0.14rem;
+}
+footer .contain dl dd a {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, .3)
+}
+footer .contain > dl.social dd {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, .3)
+}

@@ -1,0 +1,81 @@
+.team {
+    margin: 0 auto;
+    width: 9.7rem;
+    height: 10.8rem;
+    text-align: center;
+    
+}
+.team > h1 {
+    margin-top: 0.96rem;
+    font-size: 0.42rem;
+}
+.team > p {
+    margin-top: 0.35rem;
+    font-size: 0.18rem;
+    opacity: .7;
+    line-height: 0.28rem;
+}
+
+.team > ul  {
+    margin-top: 0.66rem;
+    height: 7.1rem;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    
+}
+.team > ul li {
+    position: relative;
+    width: 4.7rem;
+    height: 3.4rem;
+}
+.team > ul li > img {
+    width: 4.7rem;
+    height: 3.4rem;
+}
+.team  ul li  .info {
+    display: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.7rem;
+    height: 3.4rem;
+    background: rgba(20, 20, 20, 0.65)
+}
+.team  ul li:hover .info{
+    display: block;
+}
+
+.team  ul li  .info .title {
+    line-height: 0.16rem;
+    margin: 1.1rem auto 0.2rem auto;
+    font-size: 0.2rem;
+}
+.team  ul li  .info .content {
+    line-height: 0.1rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.12rem;
+    opacity: .4;
+}
+.team  ul li  .info .icon span {
+    display: inline-block;
+    width: 0.52rem;
+    height: 0.55rem;
+    margin: 0 0.15rem;
+  
+}
+.team  ul li  .info .icon span:nth-child(1) {
+    background: url(../assets/team/Facebook.svg)  no-repeat;
+    background-size: contain;
+}
+.team  ul li  .info .icon span:nth-child(2) {
+    background: url(../assets/team/Twitter.svg)  no-repeat;
+    background-size: contain;
+}
+.team  ul li  .info .icon span:nth-child(3) {
+    background: url(../assets/team/Instagram.svg)  no-repeat;
+    background-size: contain;
+}

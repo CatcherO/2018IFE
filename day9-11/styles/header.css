@@ -1,12 +1,10 @@
-html {
-    font-size: 100px;
-}
+
 
 .header {
     overflow: hidden;
     width: 16rem;
     height: 9.9rem;
-    background-image: url(./assets/header/header-background_01.jpg);
+    background-image: url(../assets/header/header-background_01.jpg);
     background-size: contain;
     text-align: center;
 }

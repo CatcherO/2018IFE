@@ -1,0 +1,60 @@
+.feature-2 {
+    width: 16rem;
+    height: 5.8rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.feature-2>h1 {
+    font-size: 0.42rem;
+    font-weight: bold;
+}
+
+.feature-2 ul.list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.85rem auto 0 auto;
+    width: 9.6rem;
+    height: 3.55rem;
+}
+
+.feature-2 ul li {
+    width: 2.7rem;
+}
+.feature-2 ul li>span {
+
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    
+    
+}
+
+.feature-2 ul li:nth-child(1)>span {
+    width: 1.20rem;
+    height: 0.35rem;
+    background: url(../assets/feature-2/Singleton.svg) no-repeat;
+    background-size: contain;
+    
+}
+
+.feature-2 ul li:nth-child(2) >span {
+    width: 0.75rem;
+    height: 0.35rem;
+    background: url(../assets/feature-2/Hero.svg) no-repeat;
+    background-size: contain;
+     
+}
+
+.feature-2 ul li:nth-child(3)>span {
+    width: 1.20rem;
+    height: 0.35rem;
+    background: url(../assets/feature-2/Portland.svg) no-repeat;
+    background-size: contain;
+    
+}
+
+.feature-2 ul li>p {
+    line-height: 0.26rem;
+    font-size: 0.16rem;
+    opacity: 0.7;
+}

@@ -47,7 +47,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* // 全局继承盒模型 */
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 *,
@@ -66,10 +66,29 @@ h6 {
   font-weight: normal;
 }
 
+
 a {
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+@media screen and (max-width: 321px) {
+  body {
+      font-size:16px
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+  body {
+      font-size:17px
+  }
+}
+
+@media screen and (min-width: 400px) {
+  body {
+      font-size:19px
+  }
 }
