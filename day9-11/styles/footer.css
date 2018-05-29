@@ -25,7 +25,26 @@ footer .contain dl dd a {
     font-size: 0.16rem;
     color: rgba(255, 255, 255, .3)
 }
+
+footer .contain dl.social {
+    display: block;
+}
+
+
+
 footer .contain > dl.social dd {
+    font-weight: bold;
+    line-height: 0.3rem;
+    margin-top: 0.3rem;
     font-size: 0.18rem;
     color: rgba(255, 255, 255, .3)
+}
+footer .contain > dl.social dd ul {
+     margin-top: 0.43rem;
+    width: 2.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer .contain > dl.social dd a img {
+    opacity: .3;
 }
