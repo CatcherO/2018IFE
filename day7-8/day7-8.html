@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ife7-8</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./day7-8.css">
+</head>
+<body>
+    <header>
+        <h1><span>Logo</span></h1>
+        <p>
+            <span><a href="#">Github</a></span>
+            <span><a href="#">Register</a></span>
+            <span><a href="#">Login</a></span>
+        </p>
+    </header>
+    <section class="banner">
+        <div class="num">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="contain">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#" >PROFILE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="panels">
+                <section class="active-panel">
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </section>
+                <section>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </section>
+                <section>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </section>
+            </div>
+    </section>
+    <footer>
+        <span>copyright 2018 ife.baidu.com</span>
+    </footer>
+    <script>
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 13.5 + 'px'
+    
+            window.addEventListener('resize', e => {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 13.5 + 'px'
+            })
+        </script>
+</body>
+</html>
