@@ -12,9 +12,9 @@
     <header>
         <h1><span>Logo</span></h1>
         <p>
-            <span><a href="#">Github</a></span>
-            <span><a href="#">Register</a></span>
-            <span><a href="#">Login</a></span>
+            <span><a href="">Github</a></span>
+            <span><a href="">Register</a></span>
+            <span><a href="">Login</a></span>
         </p>
     </header>
     <section class="banner">
@@ -30,28 +30,66 @@
     <section class="contain">
             <nav>
                 <ul>
-                    <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="#" >PROFILE</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="javascript:void(0)" class="active">HOME</a></li>
+                    <li><a href="javascript:void(0)" >PROFILE</a></li>
+                    <li><a href="javascript:void(0)">ABOUT</a></li>
                 </ul>
             </nav>
-            <div class="panels">
-                <section class="active-panel">
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
-                <section>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
-                <section>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
+            <div class="all-panels">
+                <div class="active-panel">
+                    <section>
+                        <article>home</article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                </div>
+                <div >
+                    <section>
+                        <article>profile</article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <article>about</article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                </div>
             </div>
     </section>
     <footer>
@@ -63,6 +101,41 @@
             window.addEventListener('resize', e => {
                 document.documentElement.style.fontSize = document.documentElement.clientWidth / 13.5 + 'px'
             })
+
+            const tabs = document.querySelectorAll('.contain nav li a')
+            const panels = document.querySelectorAll('.all-panels > div')
+            
+            const setTabHandler = (tab, tabPos) => {
+
+                tab.addEventListener('click', () => {
+
+                    for(let i = 0; i < tabs.length; i++) {
+                        if(tabs[i].getAttribute('class')){
+                            tabs[i].removeAttribute('class')
+                        }
+                    }
+
+                    tab.setAttribute('class', 'active')
+
+                    for(let i = 0; i < panels.length; i++){
+                        if(panels[i].getAttribute('class')) {
+                            panels[i].removeAttribute('class')
+                        }
+                    }
+
+                    panels[tabPos].setAttribute('class', 'active-panel')
+
+                })
+
+               
+            }
+
+            for(let i = 0; i < tabs.length; i++) {
+                setTabHandler(tabs[i], i)
+            }
+            
+
+
         </script>
 </body>
 </html>
