@@ -1,0 +1,156 @@
+
+aside {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    display: flex;
+    
+    font-size: 12px;
+    background-color: #cf7979;
+    
+}
+
+aside nav {
+    position: relative;
+    
+    flex: 2;
+    background: #1d2531;
+    text-align: center;
+}
+aside nav li {
+    margin-top: 20px;
+}
+
+aside nav ul a {
+    position: relative;
+    
+    
+}
+/* aside nav ul a.active::before {
+    content: " ";
+    position: absolute;
+    left: -27px;
+    bottom: 30px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 15px rgb(255, 255, 255);
+    background: #8ec8ff;
+    
+} */
+
+aside nav ul a:focus::before,
+aside nav ul a:hover::before
+{
+    content: " ";
+    position: absolute;
+    left: -27px;
+    bottom: 30px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 15px rgba(255, 255, 255, 0.486);
+    background: #8ec8ff;
+}
+
+aside nav .bottom-actions {
+    position: absolute;
+    left: 26px;
+    bottom: 20px;
+}
+.bottom-actions a {
+    display: inline-block;
+    margin-right: 16px;
+}
+aside .menu {
+    position: relative;
+    flex: 5;
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+    
+    padding-bottom: 54px;
+    background: #222c3c;
+}
+
+.menu .menu-box {
+    width: 190px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.menu .menu-box:last-of-type {
+    border-bottom: rgba(255, 255, 255, 0);
+}
+
+.menu header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu-box header h2 {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+.menu-box .menu-lists {
+    margin-top: 30px;
+}
+
+.menu-lists .menu-list {
+
+    margin-top: 20px;
+}
+.menu-lists .menu-list a {
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+
+.menu-lists .menu-list a:focus,
+.menu-lists .menu-list a:hover
+{
+    color: rgba(255, 255, 255, 1)
+}
+
+.menu-lists .menu-list a:focus::before,
+.menu-lists .menu-list a:hover::before
+{
+    content: " ";
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    width: 2px;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 15px rgba(255, 255, 255, 0.486);
+    background: #77bdff;
+}
+
+.menu-lists .menu-list h2 {
+    font-size: 14px;
+    
+}
+
+.menu-box .menu-list h2 img {
+    
+    margin-right: 10px;
+}
+
+
+
+.menu .footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin-left: 30px;
+    justify-content: space-between;
+    width: 190px;
+    /* height: 54px; */
+    margin-bottom: 20px;
+    border-bottom: 4px solid #2d3848;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+    background: #222c3c;
+}
