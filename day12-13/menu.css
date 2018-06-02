@@ -26,15 +26,13 @@ html, body {
     width: 100%;
 }
 aside {
-    /* position: absolute; */
+   
     position: relative;
     width: 350px;
     height: 100%;
     display: flex;
     flex: none;
     font-size: 12px;
-    /* background-color: #cf7979; */
-    /* overflow: auto; */
     
 }
 
@@ -81,7 +79,7 @@ aside nav ul a:hover::before
 }
 
 aside nav .bottom-actions {
-    position: fixed;
+    position: absolute;
     left: 26px;
     bottom: 20px;
 }
@@ -169,21 +167,20 @@ aside .menu {
 }
 
 
-
-.menu .footer {
+ .footer {
+    position: absolute;
     display: flex;
-    position: fixed;
-    bottom: 0;
-    margin-left: 30px;
+    bottom: 0px;
+    left: 130px;;
     justify-content: space-between;
     width: 190px;
-    /* height: 54px; */
     margin-bottom: 20px;
     border-bottom: 4px solid #2d3848;
     line-height: 30px;
     color: rgba(255, 255, 255, 1);
     background: #222c3c;
 }
+
 
 .app-layout {
     display: flex;
