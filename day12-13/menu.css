@@ -307,7 +307,7 @@ aside .menu {
     display: flex;
     padding: 0 55px 0 30px;
     margin-top: 25px;
-    overflow: ;
+    overflow: auto;
 }
 .open-chat-box .text {
     
