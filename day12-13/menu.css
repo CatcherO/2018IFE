@@ -17,20 +17,29 @@
     line-height: 20px;
     background: linear-gradient(#f45438,#cb270a);
 }
+html, body {
+    height: 100%;
+}
+.comtain {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 aside {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 350px;
     height: 100%;
     display: flex;
-    
+    flex: none;
     font-size: 12px;
-    background-color: #cf7979;
+    /* background-color: #cf7979; */
+    /* overflow: auto; */
     
 }
 
 aside nav {
-    position: relative;
-    
+    height: 100%; 
     flex: 2;
     background: #1d2531;
     text-align: center;
@@ -72,7 +81,7 @@ aside nav ul a:hover::before
 }
 
 aside nav .bottom-actions {
-    position: absolute;
+    position: fixed;
     left: 26px;
     bottom: 20px;
 }
@@ -81,7 +90,7 @@ aside nav .bottom-actions {
     margin-right: 16px;
 }
 aside .menu {
-    position: relative;
+    height: 100%;
     flex: 5;
     display: flex;
     flex-flow: column;
@@ -177,19 +186,18 @@ aside .menu {
 }
 
 .app-layout {
-    position: absolute;
-    left:350px;
     display: flex;
+    flex: auto;
     flex-flow: column;
     height:100%;
 }
 .top-bar {
+    flex: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     height: 80px;
-    background: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -225,26 +233,32 @@ aside .menu {
 
 .content {
     
-    flex: 1;
+    flex: auto;
     display: flex;
-   
+    height: 100%;
+    
 
 }
 
 .chats {
+    flex: none;
     display: flex;
     flex-flow: column;
     width: 400px;
+    height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    
-    
-}
+    }
 .open-chat {
-    flex: 1;
+    position: relative;
+    flex: auto;
+    display: flex;
+    flex-flow: column;   
+    height: 100%;
     
 }
 
 .open-chat .chat-bar {
+    flex: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,23 +310,20 @@ aside .menu {
 }
 
 .open-chat-boxs {
-    /* width: 100%; */
-    display: flex;
-    flex-flow: column;
+    flex: auto;
     overflow: auto;
+    padding-bottom: 105px;
 }
 
 .open-chat-box {
-    /* width: 100%; */
+    
     display: flex;
     padding: 0 55px 0 30px;
     margin-top: 25px;
-    overflow: auto;
 }
 .open-chat-box .text {
     
     margin-left: 20px;
-    padding-bottom: 20px;
     
 }
 
@@ -331,6 +342,7 @@ aside .menu {
 }
 
 .chats .search {
+    flex: none;
     position: relative;
     width: 100%;
     height: 70px;
@@ -357,8 +369,8 @@ aside .menu {
 }
 
 .chats .chat-boxs {
-    flex: 1;
-    width: 100%;
+    
+    flex: auto;
     overflow: auto;
 }
 
@@ -388,7 +400,7 @@ aside .menu {
 
 
 .chat-box .profile > span {
-    /* content: "3m"; */
+    
     font-size: 14px;
     color: #7f8fa4;
     position: absolute;
@@ -436,15 +448,63 @@ aside .menu {
     font-size: 14px;
     line-height: 20px;
     color: #585d68;
-    /* text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; */
-    /* overflow: hidden; */
-    /* white-space:nowrap;  */
-    /* text-overflow: ellipsis; */
-    height: 65px;
 }
 
+.time-divider {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7f8fa4;
+}
+.time-divider.new {
+    color: #2399f1;
+}
 
+.time-divider.new::before,
+.time-divider.new::after
+{
+    background: linear-gradient(#89c9fa, #81bfee);
+}
 
+.time-divider::before,
+.time-divider::after
+{
+    content: "";
+    flex: 1;
+    background: linear-gradient(#fff,#ccc);
+    display: block;
+    height: 1px;
+}
+.time-divider span {
+    margin: 0 20px;    
+}
+
+.chat-input {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    flex: none;
+    display: flex;
+    width: 100%;
+    height: 54px;
+}
+.chat-input button {
+    flex: none;
+    height: 54px;
+    width: 54px;
+    font-size: 30px;
+    color: #9fa9ba;
+    background: linear-gradient(#fff, #e1e1e1);
+    border : 1px solid #9fa9ba;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-input input {
+    padding: 22px;
+    flex: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 54px;
+}
